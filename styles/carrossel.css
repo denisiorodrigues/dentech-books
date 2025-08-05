@@ -70,3 +70,14 @@
   font-weight: 700;
   text-decoration: none;
 }
+
+.descricao__estrelas {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.5em 0;
+}
+
+.estrela {
+    width: 15px;
+    height: 15px;
+}

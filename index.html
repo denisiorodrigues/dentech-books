@@ -106,6 +106,61 @@
     </div>
   </section>
 
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">mais Vendidos</h2>
+    <div class="swiper">
+      <div class="swiper-pagination"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/livros/Construct2.svg" alt="Capa do livro Construct 2"/></div>
+        <div class="swiper-slide"><img src="img/livros/Angular.svg" alt="Capa do livro Angular"/></div>
+        <div class="swiper-slide"><img src="img/livros/Gestão.svg" alt="Capa do Gestão"/></div>
+        <div class="swiper-slide"><img src="img/livros/Guia Front-end.svg" alt="Capa do livro Guia Front-end"/></div>
+        <div class="swiper-slide"><img src="img/livros/Portugol.svg" alt="Capa do livro Portugol"/></div>
+        <div class="swiper-slide"><img src="img/livros/Tuning.svg" alt="Capa do livro Tuning"/></div>
+        <div class="swiper-slide"><img src="img/livros/UX.svg" alt="Capa do livro UX"/></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+
+     <div class="card">
+        <div class="card__descricao">
+            <div class="descricao">
+                <ul class="descricao__estrelas">
+                  <li class="estrela"><img src="img/Star.svg" alt="Imagem de uma estrela"></li>
+                  <li class="estrela"><img src="img/Star.svg" alt="Imagem de uma estrela"></li>
+                  <li class="estrela"><img src="img/Star.svg" alt="Imagem de uma estrela"></li>
+                  <li class="estrela"><img src="img/Star.svg" alt="Imagem de uma estrela"></li>
+                  <li class="estrela"><img src="img/Star.svg" alt="Imagem de uma estrela"></li>
+                </ul>
+                <h3 class="descricao__titulo">Autora do mês</h3>
+                <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
+                <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+            </div>
+            <img src="img/Perfil-escritora 1.png" alt="Logomarca do angular" class="descricao__imagem" />
+        </div>
+        <div class="card__botoes">
+          <!-- 1ª coluna -->
+          <ul class="botoes">
+              <li class="botoes__item">
+                  <img src="img/favoritos.svg" alt="Favoritar livro" class="tamanho_padrao">
+              </li>
+              <li class="botoes__item">
+                  <img src="img/compras.svg" alt="Adicionar ao carrinho de compras" class="tamanho_padrao">
+              </li>
+          </ul>
+
+          <!-- 2ª coluna -->
+          <a href="#" class="botoes__ancora">Saiba mais</a>
+        </div>
+    </div>
+  </section>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper('.swiper', {
