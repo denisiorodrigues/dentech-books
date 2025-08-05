@@ -12,3 +12,6 @@ Nesse projeto estamos utilizando a coleção [solar-broken-line-icons](https://w
 
 ### [Swiper](https://swiperjs.com/) 
 O Swiper é um plugin e uma biblioteca que podemos importar externamente através das redes de distribuição (CDN). Ou seja, em vez de ter que baixar vários arquivos que levam à construção desse carrossel.
+
+## Backlog de fucnionalidades.
+- Botão
