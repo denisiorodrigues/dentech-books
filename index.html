@@ -70,8 +70,14 @@
       </ul>
     <div class="container">
       <a href="#"><img src="img/favoritos.svg" class="tamanho_padrao container__imagem container__imagem--transparent" alt="meus favoritos" /></a>
-      <a href="#"><img src="img/compras.svg" class="tamanho_padrao container__imagem" alt="Carrinho de compras" /></a>
-      <a href="#"><img src="img/usuario.svg" class="tamanho_padrao container__imagem" alt="Meu perfil" /></a>
+      <a href="#" class="container__link">
+        <img src="img/compras.svg" class="tamanho_padrao container__imagem" alt="Carrinho de compras" />
+        <p class="container__texto">Minha sacola</p>
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/usuario.svg" class="tamanho_padrao container__imagem" alt="Meu perfil" />
+        <p class="container__texto">Meu perfil</p>
+      </a>
     </div>
   </header>
   <section class="banner">
@@ -81,81 +87,85 @@
   </section>
   <section class="carrossel">
     <h2 class="carrossel__titulo">Novos lançamentos</h2>
-    <div class="swiper">
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
+    <div class="carrossel__container">
+      <div class="swiper">
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide"><img src="img/livros/capa_livro_fantasia.jpg" alt="Capa do livro mestres do tempo de R.V. Campbell"/></div>
-        <div class="swiper-slide"><img src="img/livros/CAPAS-QUE-VENDEM.png" alt="Capa do livro Capas que vendem de Eldes Saullo"/></div>
-        <div class="swiper-slide"><img src="img/livros/e-assim-que-acaba.png" alt="Capa do livro É assim que acaba de collen Hoover"/></div>
-        <div class="swiper-slide"><img src="img/livros/no-caminho-da-luz.png" alt="Capa do livro No caminho da luz de Alexandre Timoteo"/></div>
-        <div class="swiper-slide"><img src="img/livros/relatos-por-tras-do-veu.png" alt="Capa do livro relatos por tras do veu de Luther Alt"/></div>
-        <div class="swiper-slide"><img src="img/livros/vovo-virou-semente.png" alt="Capa do livro Vovo virou semente de Rodrigo Ciriaco"/></div>
-        <div class="swiper-slide"><img src="img/livros/Acessibilidade.svg" alt="Capa do livro Acessibilidade na Web de Reinaldo Ferraz"/></div>
-        <div class="swiper-slide"><img src="img/livros/ApacheKafka.png" alt="Capa do livro Apache Kafka de Reinaldo Ferraz"/></div>
-        <div class="swiper-slide"><img src="img/livros/MEAN.png" alt="Capa do livro sobre MEAN de Flavio Almeida"/></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/livros/capa_livro_fantasia.jpg" alt="Capa do livro mestres do tempo de R.V. Campbell"/></div>
+          <div class="swiper-slide"><img src="img/livros/CAPAS-QUE-VENDEM.png" alt="Capa do livro Capas que vendem de Eldes Saullo"/></div>
+          <div class="swiper-slide"><img src="img/livros/e-assim-que-acaba.png" alt="Capa do livro É assim que acaba de collen Hoover"/></div>
+          <div class="swiper-slide"><img src="img/livros/no-caminho-da-luz.png" alt="Capa do livro No caminho da luz de Alexandre Timoteo"/></div>
+          <div class="swiper-slide"><img src="img/livros/relatos-por-tras-do-veu.png" alt="Capa do livro relatos por tras do veu de Luther Alt"/></div>
+          <div class="swiper-slide"><img src="img/livros/vovo-virou-semente.png" alt="Capa do livro Vovo virou semente de Rodrigo Ciriaco"/></div>
+          <div class="swiper-slide"><img src="img/livros/Acessibilidade.svg" alt="Capa do livro Acessibilidade na Web de Reinaldo Ferraz"/></div>
+          <div class="swiper-slide"><img src="img/livros/ApacheKafka.png" alt="Capa do livro Apache Kafka de Reinaldo Ferraz"/></div>
+          <div class="swiper-slide"><img src="img/livros/MEAN.png" alt="Capa do livro sobre MEAN de Flavio Almeida"/></div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
       </div>
 
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      <div class="card">
+          <div class="card__descricao">
+              <div class="descricao">
+                  <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                  <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                  <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+              </div>
+              <img src="img/Angular.png" alt="Logomarca do angular" class="descricao__imagem" />
+          </div>
+          <div class="card__botoes">
+            <!-- 1ª coluna -->
+            <ul class="botoes">
+                <li class="botoes__item">
+                    <img src="img/favoritos.svg" alt="Favoritar livro" class="tamanho_padrao">
+                </li>
+                <li class="botoes__item">
+                    <img src="img/compras.svg" alt="Adicionar ao carrinho de compras" class="tamanho_padrao">
+                </li>
+            </ul>
 
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
+            <!-- 2ª coluna -->
+            <a href="#" class="botoes__ancora">Saiba mais</a>
+          </div>
+      </div>
     </div>
 
-     <div class="card">
-        <div class="card__descricao">
-            <div class="descricao">
-                <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
-                <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
-                <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
-            </div>
-            <img src="img/Angular.png" alt="Logomarca do angular" class="descricao__imagem" />
-        </div>
-        <div class="card__botoes">
-          <!-- 1ª coluna -->
-          <ul class="botoes">
-              <li class="botoes__item">
-                  <img src="img/favoritos.svg" alt="Favoritar livro" class="tamanho_padrao">
-              </li>
-              <li class="botoes__item">
-                  <img src="img/compras.svg" alt="Adicionar ao carrinho de compras" class="tamanho_padrao">
-              </li>
-          </ul>
-
-          <!-- 2ª coluna -->
-          <a href="#" class="botoes__ancora">Saiba mais</a>
-        </div>
-    </div>
   </section>
 
   <section class="carrossel">
     <h2 class="carrossel__titulo">mais Vendidos</h2>
-    <div class="swiper">
-      <div class="swiper-pagination"></div>
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="img/livros/Construct2.svg" alt="Capa do livro Construct 2"/></div>
-        <div class="swiper-slide"><img src="img/livros/Angular.svg" alt="Capa do livro Angular"/></div>
-        <div class="swiper-slide"><img src="img/livros/Gestão.svg" alt="Capa do Gestão"/></div>
-        <div class="swiper-slide"><img src="img/livros/Guia Front-end.svg" alt="Capa do livro Guia Front-end"/></div>
-        <div class="swiper-slide"><img src="img/livros/Portugol.svg" alt="Capa do livro Portugol"/></div>
-        <div class="swiper-slide"><img src="img/livros/Tuning.svg" alt="Capa do livro Tuning"/></div>
-        <div class="swiper-slide"><img src="img/livros/UX.svg" alt="Capa do livro UX"/></div>
+    <div class="carrossel__container">
+      <div class="swiper">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/livros/Construct2.svg" alt="Capa do livro Construct 2"/></div>
+          <div class="swiper-slide"><img src="img/livros/Angular.svg" alt="Capa do livro Angular"/></div>
+          <div class="swiper-slide"><img src="img/livros/Gestão.svg" alt="Capa do Gestão"/></div>
+          <div class="swiper-slide"><img src="img/livros/Guia Front-end.svg" alt="Capa do livro Guia Front-end"/></div>
+          <div class="swiper-slide"><img src="img/livros/Portugol.svg" alt="Capa do livro Portugol"/></div>
+          <div class="swiper-slide"><img src="img/livros/Tuning.svg" alt="Capa do livro Tuning"/></div>
+          <div class="swiper-slide"><img src="img/livros/UX.svg" alt="Capa do livro UX"/></div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
       </div>
 
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
-    </div>
-
-     <div class="card">
+      <div class="card">
         <div class="card__descricao">
             <div class="descricao">
                 <ul class="descricao__estrelas">
@@ -185,7 +195,9 @@
           <!-- 2ª coluna -->
           <a href="#" class="botoes__ancora">Saiba mais</a>
         </div>
+      </div>
     </div>
+
   </section>
 
   <section class="topico">
